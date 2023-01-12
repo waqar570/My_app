@@ -1,0 +1,13 @@
+<h1>Hello, Rails!I am Waqar Jamil and I am Learning Rails</h1>
+<h1>Articles</h1>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <%= link_to article.name, article %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "New Article", new_article_path %>
+
